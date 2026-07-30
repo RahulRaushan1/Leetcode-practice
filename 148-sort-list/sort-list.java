@@ -26,7 +26,8 @@ class Solution {
         head = sortList(head);
         rightHead = sortList(rightHead);
 
-        return merge(head,rightHead);
+        ListNode merge= merge(head,rightHead);
+        return merge;
 
         
     }
