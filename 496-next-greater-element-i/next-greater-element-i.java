@@ -5,8 +5,7 @@ class Solution {
 
         for(int ele : nums2){
             while( !stack.isEmpty() && ele > stack.peek()){
-                map.put(stack.peek(),ele);
-                stack.pop();
+                map.put(stack.pop(),ele);
             }
             stack.push(ele);
         }
